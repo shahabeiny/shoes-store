@@ -1,0 +1,17 @@
+.product__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--size-16);
+}
+
+.product__box-titles{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: var(--size-16);
+}
+
+

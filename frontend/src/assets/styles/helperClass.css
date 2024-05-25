@@ -1,0 +1,151 @@
+.flex {
+  display: flex;
+}
+
+.radius__inner{
+  border-radius: var(--size-radius-inner);
+  -webkit-border-radius: var(--size-radius-inner);
+  -moz-border-radius: var(--size-radius-inner);
+  -ms-border-radius: var(--size-radius-inner);
+  -o-border-radius: var(--size-radius-inner);
+}
+
+.radius__outter{
+  border-radius: var(--size-radius-outter);
+  -webkit-border-radius: var(--size-radius-outter);
+  -moz-border-radius: var(--size-radius-outter);
+  -ms-border-radius: var(--size-radius-outter);
+  -o-border-radius: var(--size-radius-outter);
+}
+
+.font-weigth-600 {
+  font-weight: 600;
+}
+
+.font-12 {
+  font-size: var(--size-12);
+}
+
+.font-14 {
+  font-size: var(--size-14);
+}
+
+.font-18 {
+  font-size: var(--size-18);
+}
+
+.font-24 {
+  font-size: var(--size-24);
+}
+
+.image-small {
+  display: block;
+  width: 5rem;
+  height: 5rem;
+  border-radius: var(--size-radius);
+}
+
+.image-medium {
+  display: block;
+  width: 16rem;
+  height: 16rem;
+  border-radius: var(--size-radius);
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.m-top-12 {
+  margin-top: var(--size-12);
+}
+
+.m-right-12 {
+  margin-right: var(--size-12);
+}
+
+.m-left-12 {
+  margin-left: var(--size-12);
+}
+
+.m-top-16 {
+  margin-top: var(--size-16);
+}
+
+.m-top-32 {
+  margin-top: var(--size-32);
+}
+
+.m-bottom-16 {
+  margin-bottom: var(--size-18);
+}
+
+.m-bottom-18 {
+  margin-bottom: var(--size-18);
+}
+
+.m-right-18 {
+  margin-right: var(--size-18);
+}
+
+.m-top-bottom-16 {
+  margin: var(--size-16) 0;
+}
+
+.m-top-bottom-32 {
+  margin: var(--size-32) 0;
+}
+
+.m-top-32 {
+  margin-top: var(--size-32) ;
+}
+
+.m-top-bottom-18 {
+  margin: var(--size-18) 0;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.grid-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: var(--size-16);
+  height: 100%;
+  width: 100%;
+}
+
+.circle-color {
+  border-radius: 50%;
+  width: 2.8rem;
+  height: 2.8rem;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: var(--color-text);
+  border: 1px solid var(--color-desc);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.disply-none {
+  display: none;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.width-100 {
+  width: 100%;
+}

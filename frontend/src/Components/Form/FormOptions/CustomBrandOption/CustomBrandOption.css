@@ -1,0 +1,26 @@
+.option__wrapper{
+display: flex;
+align-items: center;
+gap: var(--size-8);
+padding: var(--size-8);
+cursor: pointer;
+}
+
+.option__wrapper:hover{
+  background-color: var(--color-primary);
+ }
+
+.option__img-brand{
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.option__name-brand{
+  font-size: 1.6rem;
+}

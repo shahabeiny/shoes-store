@@ -1,0 +1,30 @@
+.autocomplete__form{
+  width: 100%;
+  position: relative;
+}
+
+.results{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: var(--size-12);
+  padding: 0 var(--size-14);
+  color: var(--color-button);
+  cursor: pointer;
+  overflow-y: auto;
+  max-height: 20rem;
+}
+
+.results__item{
+  padding: var(--size-14) 0;
+  border-bottom: 0.2px solid var(--color-line);
+}
+
+.results__item:hover{
+  background-color: var(--hover-box);
+}
+
+.results__item:last-child{
+  border-bottom: 0;
+}
+

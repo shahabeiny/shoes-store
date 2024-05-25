@@ -1,0 +1,33 @@
+.add-color__option{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.add-color__title{
+  font-size: 1.8rem;
+}
+
+.option__wrapper{
+display: flex;
+align-items: center;
+justify-content: flex-start;
+cursor: pointer;
+}
+
+.option__wrapper:hover{
+  background-color: var(--color-primary);
+ }
+
+.option__name-color{
+
+padding: 0.5rem ;
+}
+
+
+
+.option__color{
+width: 4rem;
+height: 100%;
+display: inline-block;
+}

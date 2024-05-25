@@ -1,0 +1,8 @@
+.title-input{
+  width: 100%;
+  text-align: start;
+  font-size: 1.6rem;
+  color: var(--color-icon);
+  display: inline-block;
+  margin: var(--size-16) 0 var(--size-8) 0;
+}

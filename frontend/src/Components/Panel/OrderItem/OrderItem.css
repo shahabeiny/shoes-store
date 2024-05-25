@@ -1,0 +1,128 @@
+.order-item {
+  background-color: var(--color-white);
+  box-shadow: var(--shadow);
+  width: 100%;
+}
+
+.order-item__top {
+  flex-direction: column;
+  gap: var(--size-8);
+  border-bottom: 0.5px solid var(--color-desc);
+}
+
+.order-item__top,
+.order-item__bottom,
+.order-item__detail-product {
+  padding: var(--size-16);
+}
+
+.order-item__header {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.order-item__header-left,
+.order-item__header-right {
+  gap: var(--size-8);
+  align-items: center;
+}
+
+.order-item__header-infos {
+  align-items: center;
+  gap: var(--size-8);
+  flex-wrap: wrap;
+}
+
+.order-item__title-wrapper {
+  align-items: center;
+  gap: var(--size-8);
+}
+
+.order-item__header-title {
+  color: var(--color-desc);
+}
+
+.order-item__header-user {
+  position: relative;
+  cursor: pointer;
+  color: var(--color-green);
+}
+
+.title-popup {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: -8rem;
+  z-index: 1000;
+  display: none;
+  transition: var(--transaction);
+  -webkit-transition: var(--transaction);
+  -moz-transition: var(--transaction);
+  -ms-transition: var(--transaction);
+  -o-transition: var(--transaction);
+}
+
+.order-item__header-user:hover .title-popup {
+  display: block;
+  color: var(--color-text);
+}
+
+.order-item__title-wrapper:not(:last-child):after {
+  content: '';
+  width: 0.5rem;
+  height: 0.5rem;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: var(--color-desc);
+  margin: 0 var(--size-8);
+}
+
+
+
+.order-item__detail-product {
+  gap: var(--size-8);
+  background-color: var(--color-primary);
+}
+
+.order-item__detail-product-img-wrapper {
+  flex-direction: column;
+  align-items: center;
+  gap: var(--size-8);
+}
+
+.order-item__detail-product-img {
+  display: inline-block;
+  width: 8rem;
+  height: 8rem;
+}
+
+.order-item__detail-product-num {
+  gap: var(--size-8);
+  color: var(--color-desc);
+}
+
+.order-item__detail-product-name {
+  font-weight: 600;
+}
+
+.order-item__detail-product-infos-wrapper {
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+@media screen and (max-width: 380px) {
+  .order-item__title-wrapper:not(:last-child):after {
+    content: none;
+  }
+
+ 
+
+  .order-item__detail-product {
+    flex-direction: column;
+  }
+
+  .order-item__top {
+    border-bottom: none;
+  }
+}

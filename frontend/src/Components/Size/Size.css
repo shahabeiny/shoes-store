@@ -1,0 +1,14 @@
+.size-box{
+  cursor: pointer;
+}
+
+.size-box--select{
+  color: var(--color-white);
+  padding: 0.8rem;
+  background-color: var(--color-green);
+  border-radius: var(--size-radius-inner);
+  -webkit-border-radius: var(--size-radius-inner);
+  -moz-border-radius: var(--size-radius-inner);
+  -ms-border-radius: var(--size-radius-inner);
+  -o-border-radius: var(--size-radius-inner);
+}

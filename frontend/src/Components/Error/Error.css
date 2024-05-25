@@ -1,0 +1,32 @@
+.error-page {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 1rem;
+}
+
+.error-page__wrapper {
+  width: 100%;
+  /* width: 40rem; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.error-page__title {
+  text-align: center;
+
+
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: var(--color-red);
+  margin-top: var(--size-16);
+}

@@ -1,0 +1,23 @@
+.user-popup{
+  overflow: hidden;
+  width: 30rem;
+  padding: var(--size-8);
+  box-shadow: var(--shadow);
+  background-color: var(--color-white);
+  transition: var(--transaction);
+  -webkit-transition: var(--transaction);
+  -moz-transition: var(--transaction);
+  -ms-transition: var(--transaction);
+  -o-transition: var(--transaction);
+}
+
+.user-popup__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-8);
+  min-height: 16rem;
+  height: 100%;
+  overflow: auto;
+  text-align: center;
+}
+

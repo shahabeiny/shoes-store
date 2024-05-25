@@ -1,0 +1,26 @@
+.box-usage{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: var(--size-8);
+  height: 14rem;
+  overflow: hidden;
+  transition: var(--transaction);
+  -webkit-transition: var(--transaction);
+  -moz-transition: var(--transaction);
+  -ms-transition: var(--transaction);
+  -o-transition: var(--transaction);
+  padding: var(--size-16);
+  color: var(--color-white);
+  background-color: #4fb777;
+}
+
+.box-usage:hover{
+  -webkit-filter: var(--dropShadow);
+  filter: var(--dropShadow);
+}
+
+.box-usage__title{
+  font-size: 1.6rem;
+}

@@ -1,0 +1,108 @@
+.input__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-input);
+  overflow: hidden;
+  height: 5rem;
+  width: 100%;
+  margin-top: var(--size-16);
+  padding: var(--size-8);
+}
+
+.input__wrapper--area {
+  height: 100%;
+}
+
+.icon__input {
+  font-size: 2rem;
+  color: var(--color-icon);
+}
+
+.input__wrapper:focus-within {
+  border: 1px solid var(--color-desc);
+}
+
+.input-form {
+  border: none;
+  outline: none;
+  background-color: var(--color-input);
+  height: 100%;
+  width: 100%;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: var(--color-text);
+  font-size: 1.6rem;
+  font-family: inherit;
+}
+
+.input-form::placeholder {
+  font-size: 1.8rem;
+  color: var(--color-icon);
+}
+
+.input__wrapper:has(input[type="file"]) {
+  margin: 0;
+}
+
+input[type="file"] {
+  color: var(--color-icon);
+}
+
+input[type="file"]::file-selector-button {
+  border: none;
+  background: var(--color-icon);
+  padding: 0.6rem 1rem;
+  border-radius: var(--size-radius-inner);
+  font-size: 1.6rem;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+  -webkit-border-radius: var(--size-radius-inner);
+  -moz-border-radius: var(--size-radius-inner);
+  -ms-border-radius: var(--size-radius-inner);
+  -o-border-radius: var(--size-radius-inner);
+}
+
+.input__error-validate {
+  font-weight: 600;
+  width: 100%;
+  color: var(--color-red );
+  font-size: 1.6rem;
+  margin: var(--size-8) var(--size-8) 0 0;
+}
+
+.list__selcet {
+  border: none;
+  color: var(--color-text);
+  direction: rtl;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  overflow: auto;
+  width: 100%;
+  background-color: #F3F4F6;
+  height: 5rem;
+  width: 100%;
+  margin-top: var(--size-16);
+  font-size: 1.6rem;
+  outline: none;
+  cursor: pointer;
+  padding: 0 var(--size-12);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}
+
+.list__selcet:focus {
+  border: 1px solid var(--secound-color);
+}
+
+option {
+  background-color: #F3F4F6;
+  cursor: pointer;
+}

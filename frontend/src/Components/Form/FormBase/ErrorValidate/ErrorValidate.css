@@ -1,0 +1,14 @@
+.error-validate {
+  font-weight: 600;
+  width: 100%;
+  color: var(--color-red );
+  font-size: 1.6rem;
+  margin: var(--size-8) var(--size-8) 0 0;
+}
+
+.error-validate--error-server{
+  width: auto;
+  text-align: center;
+  font-size: 1.8rem !important;
+}
+

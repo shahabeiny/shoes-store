@@ -1,0 +1,211 @@
+.main-sliders {
+  height: 26rem;
+
+}
+
+.main-slider {
+  width: 32rem !important;
+  height: 100%;
+  background-color: var(--color-white);
+  overflow: hidden;
+  border-radius: var(--size-radius-outter);
+  -webkit-border-radius: var(--size-radius-outter);
+  -moz-border-radius: var(--size-radius-outter);
+  -ms-border-radius: var(--size-radius-outter);
+  -o-border-radius: var(--size-radius-outter);
+  /* box-shadow: var(--shadow); */
+
+}
+
+.main-slider__wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: var(--size-8);
+  position: relative;
+  transition: var(--transaction);
+  -webkit-transition: var(--transaction);
+  -moz-transition: var(--transaction);
+  -ms-transition: var(--transaction);
+  -o-transition: var(--transaction);
+  transition-delay: 250ms;
+}
+
+.main-slider__wrapper:after,
+.main-slider__wrapper:before {
+  content: '';
+  transition: 0.3s;
+  border-radius: 10px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  height: 100%;
+}
+
+.main-slider__wrapper:before {
+  top: 0;
+  opacity: 0;
+  background: linear-gradient(182.87deg, #0000 22.28%, var(--color-green) 96.11%);
+}
+
+.main-slider__wrapper:after {
+  bottom: 0;
+}
+
+.main-slider__wrapper:hover:before {
+  opacity: 0.8;
+}
+
+.main-slider__wrapper:hover::after {
+  opacity: 0;
+}
+
+.main-slider__brand {
+  position: absolute;
+  color: var(--color-text);
+  font-weight: 600;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-style: italic;
+  top: var(--size-16);
+  left: 2.5rem;
+}
+
+.main-slider__right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--size-8);
+  height: 100%;
+  flex-basis: 50%;
+}
+
+.main-slider__img-wrapper{
+  display: block;
+  width: 90%;
+  height: 16rem;
+  background-color: var(--color-white);
+}
+
+.main-slider__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: color-burn;
+  background: none !important;
+  background-color: none !important;
+}
+
+.main-slider__colors {
+  display: flex;
+  align-items: center;
+}
+
+.main-slider__color {
+  margin-right: -0.6rem;
+}
+
+.main-slider__left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 50%;
+}
+
+.main-slider__name {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.main-slider__usage {
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: var(--color-desc);
+  margin-bottom: var(--size-32);
+}
+
+.main-slider__wrapper:hover,
+.main-slider__wrapper:hover .slider__usage,
+.main-slider__wrapper:hover .slider__img {
+  color: var(--color-white);
+  z-index: 100;
+}
+
+.slider-controler {
+  position: relative;
+  bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-controler .slider-arrow ion-icon {
+  font-size: 2rem;
+  color: #222224;
+}
+
+.slider-controler .slider-arrow::after {
+  content: '';
+}
+
+.swiper-pagination {
+  position: relative;
+  /* width: 7rem !important; */
+  bottom: 1rem;
+
+  margin: 0 auto !important;
+}
+
+
+.swiper-pagination .swiper-pagination-bullet {
+  filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+  height: var(--size-8);
+  width: var(--size-8);
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  background: var(--color-green);
+  border-radius: var(--size-radius-inner);
+
+  width: 1.6rem;
+  -webkit-border-radius: var(--size-radius-inner);
+  -moz-border-radius: var(--size-radius-inner);
+  -ms-border-radius: var(--size-radius-inner);
+  -o-border-radius: var(--size-radius-inner);
+}
+
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  right: 0 !important;
+  left: 0 !important;
+  margin: 0 auto !important;
+  top: 5rem !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 380px) {
+  .main-slider {
+    width: 28rem !important;
+
+  }
+
+  .main-slider__img {
+    display: block;
+    width: 80%;
+    height: 16rem;
+  }
+  .main-slider__name {
+    font-size: 2.2rem;
+    font-weight: 700;
+  }
+}

@@ -1,0 +1,16 @@
+.option__wrapper{
+  display: flex;
+  align-items: center;
+  gap: var(--size-8);
+  padding: var(--size-8);
+cursor: pointer;
+}
+
+.option__wrapper:hover{
+  background-color: var(--color-primary);
+ }
+
+
+ .option__name-brand{
+  font-size: 1.6rem;
+}

@@ -1,0 +1,39 @@
+.order-panel{
+  width: 100%;
+}
+
+
+.order-panel__orders{
+  padding: var(--size-24);
+}
+
+.order-panel__order-empty-wrapper{
+  display: flex;
+  align-items:center ;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.order-panel__orders{
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+  gap: var(--size-16);
+}
+
+.order__box-title{
+  display: inline-block;
+}
+
+
+
+@media (max-width: 768px) {
+  .order__tab {
+    width: 100%;
+  }
+}
+
+
+
+

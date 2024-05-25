@@ -1,0 +1,63 @@
+.user-box {
+  padding: var(--size-16);
+  color: var(--color-text);
+  background-color: var(--color-white);
+  box-shadow: var(--shadow);
+  height: 18rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.user-box:hover {
+  -webkit-filter: var(--dropShadow);
+  filter: var(--dropShadow);
+}
+
+.user-box__icon-info{
+  position: absolute;
+  top: var(--size-16);
+  right: var(--size-16);
+}
+
+.user-box__icon-bann{
+  position: absolute;
+  top: var(--size-16);
+  left: var(--size-16);
+}
+
+.user-box__icon-edit{
+  position: absolute;
+  top: 5rem;
+  left: var(--size-16);
+}
+
+.user-box__icon-pass{
+  position: absolute;
+  top: var(--size-16);
+  right: var(--size-16);
+}
+
+
+.user-box__top {
+
+}
+
+.user-box__down {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: var(--size-8);
+}
+
+.user-box__name {
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+.user-box__email{
+  color: var(--color-desc);
+}
+

@@ -1,0 +1,35 @@
+.color {
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.color__select{
+  position: relative;
+  padding: 0.5rem;
+
+}
+
+
+.color__select::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% + 0.8rem); 
+  height: calc(100% + 0.8rem); 
+  border-radius: 50%;
+  border: 1px solid var(--color-desc);
+  pointer-events: none; 
+  opacity: 0.6;
+}
+
+.box-color{
+  margin-right: -.6rem;
+}
+
+.box-color:first-child{
+  margin-right: 0;
+}

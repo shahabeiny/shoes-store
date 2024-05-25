@@ -1,0 +1,16 @@
+.panel {
+  display: flex;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  padding-right: 6rem;
+  margin: var(--size-16) 0;
+  width: 100%;
+}
+
+
+.panel__wrapper{
+  min-height: calc(100vh - var(--size-32));
+}

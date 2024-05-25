@@ -1,0 +1,11 @@
+.user__box-title{
+  display: inline-block;
+}
+
+
+
+@media (max-width: 768px) {
+  .user__tab {
+    width: 100%;
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "name" : "store project",
+  "db" : {
+    "address" : "mongodb://localhost:27017/shoe"
+  },
+  "jwt_key": "q1w2e5r9t8y7u5j8k5i8g5v2d3b2g5y2"
+}

@@ -1,0 +1,12 @@
+.cart__wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .cart__wrapper {
+    flex-direction: column-reverse;
+    gap: 1.2rem;
+  }
+}

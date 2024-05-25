@@ -1,0 +1,109 @@
+.nav-sidebar{
+  position: fixed;
+  height: 100%;
+  width: 6rem;
+  background-color: var(--color-green);
+  border-left: 0.5rem solid var(--color-green);
+  overflow: hidden;
+  transition: width 0.5s;
+  z-index: 1000;
+  transition: var(--transaction);
+  -webkit-transition: var(--transaction);
+  -moz-transition: var(--transaction);
+  -ms-transition: var(--transaction);
+  -o-transition: var(--transaction);
+  transition-delay: 250ms;
+}
+
+.nav-sidebar:hover{
+  width: 22rem;
+
+}
+
+.menu-sidebar{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  padding-left: 0.5rem;
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.menu-sidebar__link{
+  position: relative;
+  display: block;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  margin-bottom: 1rem;
+}
+
+.active{
+  background-color: var(--color-primary) ;
+}
+
+.active .menu-sidebar__icon,.active .menu-sidebar__title{
+  color: #9E9E9E !important;
+}
+
+.active.menu-sidebar__link::before{
+  content: '';
+  position: absolute;
+  top: -3rem;
+  right: 0;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  box-shadow: 1.5rem 1.5rem 0 var(--color-primary) ;
+  background: var(--color-green);
+}
+
+.active.menu-sidebar__link::after{
+  content: '';
+  position: absolute;
+  bottom: -3rem;
+  right: 0;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  box-shadow: 1.5rem -1.5rem 0 var(--color-primary) ;
+  background: var(--color-green);
+}
+
+.menu-sidebar__icon{
+  display: block;
+  min-width: 5.3rem;
+  height: 3.3rem;
+  line-height: 7rem;
+  text-align: center;
+  padding: 0.1rem;
+  font-size: 1.5rem;
+  z-index: 1;
+  color: var(--color-primary) ;
+  
+}
+
+.menu-sidebar__icon--img{
+  display: inline-block;
+  width: 5.3rem;
+  height: 3.3rem;
+  aspect-ratio: 1/1;
+}
+
+.menu-sidebar__title{
+  display: block;
+  padding-right: 1.8rem;
+  height: 6rem;
+  line-height: 6rem;
+  text-align: center;
+  white-space: nowrap;
+  font-weight: 600;
+  color: var(--color-primary) ;
+}

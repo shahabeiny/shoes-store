@@ -1,0 +1,173 @@
+@import './assets/styles/reset.css';
+@import './assets/styles/gride.css';
+@import './assets/styles/helperClass.css';
+
+@font-face {
+  font-family: IRANSans;
+  src: url('./assets/fonts/IRANSans/IRANSans.ttf');
+  font-display: swap;
+}
+
+:root {
+  --color-red: rgb(236 29 77/1);
+
+  --color-gray: rgb(244 247 249/1);
+
+  --color-login: #45f3ff;
+
+  --hover-box: rgb(240, 240, 255);
+
+  --color-line: #e0e0e0;
+
+  --header-table: #e0e0e0;
+
+  --blue: #42a5f5;
+
+  --size-10: 1rem;
+  --size-12: 1.2rem;
+  --size-14: 1.4rem;
+
+  --size-18: 1.8rem;
+  --size-20: 2rem;
+
+  --size-30: 3rem;
+
+  /*   
+  unit size
+
+  */
+  --size-8: 0.8rem;
+  --size-12: 1.2rem;
+  --size-16: 1.6rem;
+  --size-24: 2.4rem;
+  --size-32: 3.2rem;
+  --size-36: 3.6rem;
+
+  --font-primary: 'IRANSans', Arial, Helvetica, sans-serif;
+
+  --size-radius: 1.2rem;
+  --size-radius-30: 3rem;
+  --size-line: 0.1rem;
+  --size-icon-s: 1.8rem;
+  --size-icon-m: 2.4rem;
+  --size-icon-l: 3rem;
+  --size-m-p-banner: 3rem;
+
+  --size-opacity: 1;
+  --size-opacity-hover: 0.8;
+  --size-radius-inner: 1.6rem;
+  --size-radius-outter: 2.4rem;
+--z-index-mobile:1000;
+  --color-green: #2bae66;
+  --color-green-full: #248f54;
+  --color-desc: #a1a3a8;
+  --color-blue: #0ea5e9;
+  --color-input: #f3f4f6;
+  --color-red: rgb(236 29 77/1);
+  --color-pink: #f06292;
+  --color-icon: rgb(107 114 128/1);
+  --color-yellow: #fbbf24;
+  --color-primary: #f2f2f2;
+  --color-white: #fff;
+  --color-text: #3f3f46;
+  --color-modal: rgba(0, 0, 0, 10%);
+  --transaction: all 250ms ease-in-out;
+  --shadow: 0 0 1px 0 rgba(24, 94, 224, 0.15), 0 6px 12px 0 rgba(24, 94, 224, 0.15);
+  --dropShadow: drop-shadow(0 1px 5px rgba(0, 0, 0, 0.2));
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 10px */
+  scroll-behavior: smooth;
+  --sb-track-color: #f1f1f1;
+  --sb-thumb-color: #888888;
+  --sb-size: 10px;
+  ::-webkit-scrollbar {
+    width: var(--sb-size);
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 16px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 16px;
+  }
+}
+
+::selection {
+  color: var(--color-white);
+  background-color: var(--color-green);
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  background-color: var(--color-primary);
+  font-family: var(--font-primary);
+  display: flex;
+  justify-content: space-between;
+  color: var(--color-text);
+  direction: rtl;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.Toastify__toast-body {
+  font-weight: 600;
+}
+
+.swal-footer {
+  text-align: center;
+  direction: ltr;
+}
+
+.swal2-popup {
+  font-size: 1.6rem;
+}
+
+/* react-select */
+.css-13cymwt-control {
+  border-radius: var(--size-radius-inner) !important;
+  background-color: var(--color-input) !important;
+  -webkit-border-radius: var(--size-radius-inner) !important;
+  -moz-border-radius: var(--size-radius-inner) !important;
+  -ms-border-radius: var(--size-radius-inner) !important;
+  -o-border-radius: var(--size-radius-inner) !important;
+  border-color: var(--color-desc) !important;
+  border: none !important;
+  min-height: 5rem !important;
+  font-size: 1.6rem !important;
+  padding: var(--size-8);
+}
+
+.css-13cymwt-control:focus-within {
+  border: 1px solid var(--color-desc) !important;
+}
+
+.css-1xc3v61-indicatorContainer {
+  color: var(--color-icon) !important;
+}
+
+.css-1dimb5e-singleValue {
+  color: var(--color-icon) !important;
+}

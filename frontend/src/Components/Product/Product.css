@@ -1,0 +1,120 @@
+.product-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: var(--shadow);
+  height: 22rem;
+  color: var(--color-text);
+  background-color: var(--color-white);
+  transition: var(--transaction);
+  -webkit-transition: var(--transaction);
+  -moz-transition: var(--transaction);
+  -ms-transition: var(--transaction);
+  -o-transition: var(--transaction);
+  position: relative;
+  padding: var(--size-16);
+}
+
+.product-box:hover {
+  -webkit-filter: drop-shadow(0 1px 5px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(0 1px 5px rgba(0, 0, 0, 0.2));
+}
+
+.product-box--link {
+  cursor: pointer;
+}
+
+.product-box__icon {
+  position: absolute;
+  top: var(--size-16);
+  right: var(--size-16);
+  z-index: 10;
+}
+
+.product-box__icon--edit{
+  top: 5rem;
+}
+
+.product-box__brand {
+  position: absolute;
+  color: var(--color-text);
+  font-weight: 600;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-style: italic;
+  top: var(--size-16);
+  left: var(--size-16);
+  z-index: 4;
+}
+
+.product-box__wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-8);
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.product-box__top {
+  height: 12rem;
+  text-align: center;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-box__img {
+  width: 14rem;
+  height: 14rem;
+  object-fit: contain;
+}
+
+.product-box__down {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-8);
+
+}
+
+.product-box__name {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: var(--color-text);
+}
+
+.product-box__infos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-box__star {
+  display: flex;
+  align-items: center;
+  gap: var(--size-8);
+}
+
+.product-box__star-num {
+  color: var(--color-desc);
+}
+
+
+
+.product-box__color-empty {
+  color: var(--color-desc);
+}
+
+.product-box__colors {
+  display: flex;
+  align-items: center;
+}
+
+.box-color {
+  margin-right: -0.6rem;
+}
+
+.box-color:first-child {
+  margin-right: 0;
+}

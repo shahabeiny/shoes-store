@@ -1,0 +1,24 @@
+.more-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.more-text__desc {
+  line-height: 1.8;
+}
+
+.more-text__icon-wrapper {
+  display: inline-block;
+}
+
+.more-text__icon {
+  color: var(--color-desc);
+  background-color: var(--color-primary);
+  width: 2rem;
+  height: 2rem;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 50%;
+  margin-right: 2px;
+  vertical-align: middle;
+}

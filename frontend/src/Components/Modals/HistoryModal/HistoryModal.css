@@ -1,0 +1,37 @@
+.history-modal__wrapper{
+  display: flex;
+  flex-direction: column;  
+  color: var(--color-icon);
+  font-size: var(--size-18);
+  padding: var(--size-14) 0;
+  border-bottom: 1px solid var(--color-desc);
+  text-align: center;
+}
+
+.history-modal__wrapper:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.history-modal__wrapper:first-child {
+  padding-top: 0;
+}
+
+.history-modal__title {
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.history-modal__ip{
+  color: var(--color-text);
+  margin-top:0.8rem;
+  font-size: 1.6rem;
+}
+
+.history-modal_devices{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: var(--size-14);
+}
+

@@ -1,0 +1,39 @@
+.icon {
+  color: var(--color-icon);
+  font-size: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+
+.icon--click {
+  cursor: pointer;
+}
+
+.icon--disply {
+  display: none !important;
+}
+ .tooltip__child {
+  visibility: hidden;
+  width: 11rem;
+  background-color: var(--color-text);
+  color: var(--color-white);
+  text-align: center;
+  padding: var(--size-8) 0;
+  border-radius: var(--size-radius-inner);
+  position: absolute;
+  z-index: 999;
+  bottom: 110%;
+  font-size: 1.2rem;
+  left: 50%;
+  margin-left: -1rem;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.icon:hover .tooltip__child {
+  visibility: visible;
+  opacity: 1;
+}
